@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>* Room Codificator *</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Room Codificator <span>v0.1</span></h1>
+    <span class="title-bottomtxt">for <span>Endeavor's Dream</span> Project.</span>
+    <div class="conv-block">
+        <div class="input-block">
+            <label for="braille-input">Braille Input (to decode): </label><br>
+            <textarea type="text" name="braille-input" id="braille-input"></textarea><br>
+            <button id="braille-send" onclick="transcript('braille')">&#11024;-- To One-Line --&#11022;</button>
+            <button>Encode ---&#x3e; (Not available)</button>
+        </div>
+        <div class="traffic-light">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="input-block">
+            <label for="text-input">Text Input (to encode): </label><br>
+            <textarea name="text-input" id="text-input"></textarea><br>
+            <button id="text-send" onclick="transcript('text')">&#x3c;--- Transcript</button>
+        </div>
+        <div class="input-block">
+            <label for="one-line-input">One-Line Input</label><br>
+            <textarea name="one-line-input" id="one-line-input"></textarea><br>
+            <button id="one-line-send" onclick="transcript('one-line')">&#11025;-- To Block --&#11023;</button>
+        </div>
+    </div>
+</body>
+</html>
